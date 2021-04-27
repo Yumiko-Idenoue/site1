@@ -1,0 +1,368 @@
+
+
+@media screen and (min-width:992px) {
+
+  header .col-md-9 {
+    display: block;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+
+  .hero {
+    width: 100%;
+    padding-bottom: 700px;
+    overflow-x: hidden;
+  }
+
+  .hero .hero-container {
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    overflow-x: hidden;
+
+  }
+
+
+
+  .lazyload {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  .hero-container .main-catch  {
+  
+    top: 20vh;
+    font-size: 60px;
+    
+  } 
+
+
+
+
+  .index-info {
+    position: absolute;
+    width: 90%;
+    /* top: 77%; */
+    top: 80%;
+    margin-left: 5vw;
+    
+  }
+
+  .index-info .text-left {
+    display: flex;
+  }
+
+  .index-info .info-date{
+  margin-left: 70px;
+  
+  padding-left: 80px;
+  border-left: 1px solid #fff;
+
+  }
+
+  .index-info .info-date .time-target {
+    padding-top: 20px;
+  }
+
+
+
+  .index-info .text-right .button {
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    width: 106px;
+    height: 52px;
+    padding: 16px 22px;
+   
+   
+
+    
+  }
+
+  .index-idea {
+    background-color: #fff;
+  }
+
+
+
+
+  .index-idea .bg-white {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    padding: 5vh;
+    
+  } 
+
+  .index-idea .text-right .button {
+    padding: 15px 30px;
+    
+    position: absolute;
+    top: 5vh;
+    right: 30vh
+
+  }  
+
+
+  .index-service {
+   background-color: #fff;
+  }
+
+
+  .index-service .bg-img {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    padding: 5vh;
+    
+  }
+
+  .index-service .text-right .button {
+    padding: 15px 30px;
+    position: absolute;
+    top: 5vh;
+    right: 30vh
+  }  
+
+  .service-item .service-icon {
+    float: none;
+
+  }
+
+  .service-item .container {
+    display: flex;
+  }
+
+  .service-item .service-box {
+    margin: 5vh;
+  }
+
+
+  .service-item .service-box .service-icon {
+    text-align: center;
+  }
+
+  .service-item .service-box h3 {
+    margin: 5vh 0;
+    padding: 0;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .service-item .service-box .article {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+  }
+
+  .service-item .service-icon img {
+    width: 12vh;
+    height: 12vh;
+  }
+
+  .index-works .bg-blue {
+    padding: 5vh;
+  }
+
+  .index-works .text-right {
+    position: relative;
+  }
+
+  .index-works .text-right .button {
+    position: absolute;
+    padding: 15px 30px;
+    top: 5vh;
+    right: 25vh;
+
+  }
+
+
+  .big-works-slides .image-slide img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.5s;
+  } 
+
+  .small-works-slides .container{
+    
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(222, 237, 247);
+    margin: 0 auto;
+  
+  }
+  
+  .image-box {
+    margin: 10vh auto;
+    /* max-width: 300px; */
+    width: 300px;
+    height: 300px;
+    position: relative;
+  }
+
+  .small-works-slides .scroll-mark {
+    display: none;
+  }
+
+}
+
+
+/* 992ここまで */
+
+@media screen and (max-width:991px) {
+  
+
+  header .col-md-9 {
+    display: none;
+  }
+
+ header h1 a {
+  font-size: 15px;
+  font-weight: normal;
+  }
+
+
+  .index-info .btn-info {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width:767px) {
+  .hero-slider .main-catch  {
+    width: 100%;
+    margin: 0;
+    line-height: 65px;
+    font-size: 50px;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-bottom: 24%
+    
+  }
+
+
+  .company-info .article {
+    position: relative;
+    display: flex;
+    justify-content: space-between
+  }
+
+  .company-info .article  .item{
+    margin: 5vh 5vw;
+    width: 30vw;
+  }
+
+
+
+
+.company-info .text-right .button {
+  position: absolute;
+  padding: 15px 30px;
+   left: 30vw;
+
+}
+
+
+
+
+.company-info .item {
+ 
+  border-bottom: none;
+}
+
+.navigation .arrow {
+    padding: 15px;
+  }
+
+}
+
+
+
+ @media screen and (max-width:320px) {
+  .index-info .text-right .button {
+    bottom: -15vh;
+  }
+
+  .index-idea .text-right .button {
+    top: 26vh;
+  }
+
+  .index-service .text-right .button {
+    top: 26vh;
+  }
+
+  .small-works-slides .container .image-box {
+    width: 255px;
+    height: 255px;
+  }
+
+  .small-works-slides .container h1{
+    width: 255px;
+  }
+  .small-works-slides .container .mask {
+    width: 255px;
+    height: 255px;
+  }
+  .small-works-slides .container .image-box img {
+    width: 255px;
+    height: 144.5px;
+  } 
+
+.finger {
+  position: relative;
+  bottom: 0;
+  left: 80vw;
+}
+
+.arrow-finger {
+  position: absolute;
+  bottom: 2vh;
+  right: 3vh;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  margin: 0;
+  
+}
+
+
+}
+
+
+
+@media (max-width:991px) and (min-width:768px){
+  .small-works-slides .container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* background-color: rgb(222, 237, 247); */
+    margin: 0 auto;
+  
+  }
+  
+  .image-box {
+    margin: 10vh auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+  }
+  
+   .small-works-slides .scroll-mark {
+     display: none;
+   }
+}
+
+ @media (max-width:768px) {
+  .big-works-slides .image-slide img{
+    transform: scale(2);
+     height: 40vh;
+  }
+ } 
+

@@ -1,0 +1,1141 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+ 
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#161616;
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 98;
+  background: rgb(166, 210, 228);
+  line-height: 200%;
+  transition: all 1.5s ease;
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+.hidden {
+  background: none;
+  transition: all 1s ease;
+}
+
+header .contanier {
+  position: relative;
+  padding-top: 40px;
+  transition: all 0.4s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+header .row {
+  margin-left: 5%;
+  position: relative;
+ 
+}
+
+header .col-md-3 {
+  position: relative;
+  min-height: 1px;
+}
+
+
+header h1 a {
+text-decoration: none;
+font-size: 24px;
+font-weight: bold;
+color: #fff;
+
+}
+
+header .col-md-9 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+ 
+  
+}
+
+header .gnav {
+  position: absolute;
+  top: -80px;
+  right: 0;
+  
+}
+
+header .gnav ul {
+  list-style-type: none;
+  padding-right: 30px
+}
+
+header .gnav ul li {
+  float: left;
+  vertical-align: baseline;
+  background: transparent;
+  position: relative;
+  padding: 0 20px;
+}
+
+header .gnav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 62px;
+  display: block;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  letter-spacing: 0.15em;
+}
+
+header .gnav ul li a::after {
+  position: absolute;
+  content: '';
+  bottom: 12px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  /* background-color: #161616; */
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+header .gnav ul li a:hover::after {
+  width: 100%;
+}
+
+
+header .gnav ul li a:visited {
+  outline: none;
+  text-decoration: none;
+}
+
+/* ヒーロー画像 */
+.hero .hero-container {
+  width: 100%;
+  overflow: hidden;
+  height: 70vh;
+  position: relative;
+
+}
+.hero .hero-title {
+  margin-bottom: 100px;
+}
+
+
+.hero-container .main-catch  {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
+  margin-bottom: 100px;
+  font-size: 40px;
+  width: 13ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 5s ease, blink_caret .5s ease infinite alternate;
+ 
+}
+
+/* ヒーロー画像文字ここまで */
+
+.index-info {
+  
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  position: absolute;
+  top: 45vh;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  animation-name: fadeIn2;
+  animation-duration: 7s;
+  animation-iteration-count: 1; 
+  
+}
+
+.index-info .info-title {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 10px;
+  
+}
+
+.index-info time {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.index-info .info-date a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+/* ボタン */
+
+
+
+.index-info .btn-info a {
+  text-decoration: none;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+ 
+}
+
+.index-info .text-right .button {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  border: 1px solid #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  bottom: -10vh;
+  padding: 10px 30px;
+  overflow: hidden;
+}
+
+.index-info .text-right .button-eff {
+  width: 107px;
+  height: 52px;
+  top:-2px;
+  left: -120px;
+  background:#fff;
+  position:absolute;
+  transition:all .5s ease;
+  position: absolute;
+  z-index:1;
+}
+
+.index-info .text-right .button:hover .button-eff {
+  left: 0;
+}
+
+.index-info .text-right .button:hover > a{
+  color: cadetblue;
+}
+
+.index-info .text-right .arrow {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.icon-ios-arrow-right {
+  position: absolute;
+  right: -10px;
+  top: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); 
+}
+
+.index-info .text-right .button:hover > a > .arrow {
+  border: solid cadetblue;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.index-info .text-right .button:hover.icon-ios-arrow-right {
+  position: absolute;
+  right: -10px;
+  top: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); 
+}
+
+/* ボタンここまで */
+
+main{
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.index-idea{
+  margin: 0;
+  padding: 5vh;
+  width: 100%;
+  background-color: #fff;
+} 
+ 
+.index-idea .bg-white {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+ display: flex;
+ justify-content: space-between
+ } 
+
+
+.index-idea .section-title h3 {
+  line-height: 150%;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+
+}
+
+.index-idea .section-title span {
+  font-size: 10px;
+  display: block;
+  padding-bottom: 20px;
+
+}
+
+.index-idea .section-title h4 {
+  font-weight: normal;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  
+}
+
+.index-idea .btn-info a {
+  text-decoration: none;
+  color: #161616;
+  z-index: 1;
+  position: relative;
+}
+
+.index-idea .text-right .button {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  border: 1px solid #c1bfca;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 10px 30px;
+  overflow: hidden;
+  top: 15vh;
+}
+
+.index-idea .text-right .button-eff {
+  width: 107px;
+  height: 52px;
+  top:-2px;
+  left: -108px;
+  background:#c1bfca;
+  position:absolute;
+  transition:all .5s ease;
+  position: absolute;
+  z-index:1;
+}
+
+.index-idea .text-right .button:hover .button-eff {
+  left: 0;
+}
+
+.index-idea .text-right .button:hover > a{
+  color: #fff;
+}
+
+.index-idea .text-right .arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.icon-ios-arrow-right {
+  position: absolute;
+  right: -10px;
+
+  top: 3px;
+
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); 
+}
+
+.index-idea .text-right .button:hover > a > .arrow {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.index-idea .text-right .button:hover.icon-ios-arrow-right {
+  position: absolute;
+  right: -10px;
+  top: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); 
+}
+
+/* ボタンここまで */
+
+/* service */
+
+.index-service {
+  width: 100%;
+  background-image: url('../image/bg.png');
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 5vh;
+  
+ } 
+
+  .index-service .bg-img {
+   display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+
+ } 
+
+
+.index-service .row1 h3 {
+  line-height: 150%;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 46px;
+  margin: 0;
+}
+
+.index-service h4 {
+  font-weight: normal;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  
+}
+
+
+
+.index-service .btn-info a {
+  text-decoration: none;
+  color: #161616;
+  z-index: 1;
+  position: relative;
+}
+
+.index-service .text-right .button {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  border: 1px solid #c1bfca;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 10px 30px;
+  overflow: hidden;
+  top: 18vh;
+}
+
+.index-service .text-right .button-eff {
+  width: 107px;
+  height: 52px;
+  top:-2px;
+  left: -108px;
+  background:#c1bfca;
+  position:absolute;
+  transition:all .5s ease;
+  position: absolute;
+  z-index:1;
+}
+
+.index-service .text-right .button:hover .button-eff {
+  left: 0;
+}
+
+.index-service .text-right .button:hover > a{
+  color: #fff;
+}
+
+.index-service .text-right .arrow {
+  border: solid #161616;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.icon-ios-arrow-right {
+  position: absolute;
+  right: -10px;
+  top: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); 
+}
+
+.index-service .text-right .button:hover > a > .arrow {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.index-service .text-right .button:hover.icon-ios-arrow-right {
+  position: absolute;
+  right: -10px;
+  top: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); 
+}
+
+
+
+/* serviceここまで */
+
+
+
+.hamburger-menu {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: -220px;
+  width: 200px;
+  height: 100%;
+  padding: 10px;
+  background: rgb(178, 215, 230);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.hamburger-menu  ul{
+  list-style-type: none;
+  margin-top: 50px;
+}
+
+.hamburger-menu  ul li a {
+  display: block;
+  text-decoration: none;
+  color: #161616;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.show {
+  right: 0;
+}
+
+.hamburger-icon {
+  position: fixed;
+  width: 30px;
+  top: 22px;
+  right: 30px; 
+  z-index: 98;
+  cursor: pointer;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+.hamburger-line{
+  width: 30px;
+  height: 6px;
+  border-radius: 3px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.cross-box {
+  cursor: pointer;
+ 
+}
+
+  
+.hamburger-icon .hamburger-line:nth-of-type(2){
+  margin: 6px 0;
+} 
+
+.cross-box .hamburger-line:nth-of-type(1){
+  transform: translate(150px, 26px) rotate(45deg)
+}
+
+.cross-box .hamburger-line:nth-of-type(2){
+  transform:  translate(150px, 20px) rotate(-45deg)
+}
+
+/* ハンバーガーメニューここまで */
+
+
+
+.service-item {
+  position: relative;
+  background-color: #fff;
+  padding: 5vh;
+  z-index: 1;
+}
+
+
+
+.service-item .service-icon img{
+  
+  width: 8vw;
+  height: 8vh;
+  margin: 2vh;
+}
+
+.service-box {
+  overflow: hidden;
+}
+
+.service-item .service-icon {
+  float: left;
+}
+
+.service-item .service-box h3{
+  padding-left: 20vh;
+  font-size: 25px;
+  
+}
+
+.service-box1 {
+  opacity: 0;
+  transition: all step-end  0s;
+}
+
+.service-box2 {
+  opacity: 0;
+  transition: all step-end 0.5s;
+}
+
+.service-box3 {
+  opacity: 0;
+  transition: all  step-end 1s;
+}
+
+ .service-item .blink {
+   animation-name: blink;
+   animation-duration: 4s;
+   animation-timing-function: ease-out;
+   animation-iteration-count: infinite;
+   
+ } 
+
+
+ .service-item .rotate {
+   animation-name: rotate;
+   animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+ } 
+
+ .service-item .bounce {
+   animation-name: bounce;
+   /* animation-duration: 3s; */
+   animation-duration: 5s;
+   animation-delay: 2s;
+   animation-timing-function: ease-out;
+   animation-iteration-count: infinite;
+ }
+
+ .index-works{
+   position: relative;
+    margin: 0;
+    padding: 5vh;
+    width: 100%;
+    background-color: rgb(222, 237, 247);
+    z-index: 1;
+} 
+
+.index-works .container {
+  margin: 0;
+  padding: 0;
+}
+
+.index-works .bg-blue {
+  background-color: rgb(222, 237, 247);
+  margin: 0 0 10vh 0;
+  padding: 0 0 5vh 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ } 
+
+
+.index-works .section-title h3 {
+  line-height: 150%;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+.index-works .btn-info a {
+  text-decoration: none;
+  color: #161616;
+  z-index: 1;
+  position: relative;
+}
+
+
+
+.index-works .text-right .button {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  border: 1px solid #c1bfca;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 10px 30px;
+  overflow: hidden;
+  top: 5vh;
+}
+
+.index-works .text-right .button-eff {
+  width: 107px;
+  height: 52px;
+  top:-2px;
+  left: -108px;
+  background:#c1bfca;
+  position:absolute;
+  transition:all .5s ease;
+  position: absolute;
+  z-index:1;
+}
+
+.index-works .text-right .button:hover .button-eff {
+  left: 0;
+}
+
+.index-works .text-right .button:hover > a{
+  color: #fff;
+}
+
+.index-works .text-right .arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.icon-ios-arrow-right {
+  position: absolute;
+  right: -10px;
+  top: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); 
+}
+
+.index-works .text-right .button:hover > a > .arrow {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.index-works .text-right .button:hover.icon-ios-arrow-right {
+  position: absolute;
+  right: -10px;
+  top: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); 
+}
+
+
+.big-works-slides  {
+  position: relative;
+}
+
+/* ここからswiper */
+
+
+
+.swiper-container {
+  width: 100%;
+  height:80vh
+  }
+
+.swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+} 
+
+
+.swiper-container .swiper-wrapper .image1{
+  background-image: url(../image/flower5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-container .swiper-wrapper .image2{
+  background-image: url(../image/flower6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-container .swiper-wrapper .image3{
+  background-image: url(../image/flower7.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-container .swiper-wrapper .image4{
+  background-image: url(../image/flower8.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-container {
+    height: 400px;
+  }
+}
+
+/* swiperここまで */
+
+
+.small-works-slides {
+  position: relative;
+  background-color: rgb(222, 237, 247);
+  padding-bottom: 10vh;
+  margin: 0;
+  padding: 0;
+  
+
+} 
+
+.small-works-slides .container {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: rgb(222, 237, 247);
+}
+
+.image-box {
+  margin: 0vh 1vh 10vh 3vh;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.mask {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0 , 0, 0, 0.8);
+  transform: scale(0.8);
+  transition: all 0.2s ease-in-out;
+  }
+ 
+.image-box img{
+  width: 300px;
+  height: 170px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  
+} 
+
+.image-box h1 {
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  height: 130px;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.image-box .button {
+  margin: 0;
+  padding: 5px 20px;
+  border: 1px solid #fff;
+  display: inline-block;
+  z-index: 2;
+  white-space: nowrap;
+  padding: 10px 30px;
+  overflow: hidden;
+}
+
+.image-box .button a {
+  position: relative;
+  text-decoration: none;
+  color: cadetblue;
+  z-index: 2;
+}
+
+.image-box .button-eff {
+  width: 107px;
+  height: 52px;
+  top:-2px;
+  left: -108px;
+  background:#c1bfca;
+  position:absolute;
+  transition:all .5s ease;
+  position: absolute;
+  z-index:1;
+}
+
+.image-box .button:hover .button-eff {
+  left: 0;
+}
+
+.image-box .button:hover > a{
+  color: #fff;
+}
+
+
+.button:last-child {
+  margin-left: 10px;
+}
+
+.lanch {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  opacity: 0;
+  z-index: 1;
+  transform: scale(0.8);
+}
+
+.detall {
+  position: absolute;
+  top: 80px;
+  right: 40px;
+  opacity: 0;
+  z-index: 1;
+  transform: scale(0.8);
+
+}
+
+.image-box:hover > .mask {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.image-box:hover >.lanch {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.image-box:hover >.detall {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.5s;
+
+}
+
+.small-works-slides .scroll-mark {
+  position: relative;
+  height: 6vh;
+ 
+}
+
+.finger {
+ position: absolute;
+ display: block;
+ right: 5vw;
+ top: 150px;
+ opacity: 0;
+ z-index: 2;
+  
+}
+
+.showFinger {
+      animation-name: finger;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 1s;
+      transition: 0.5s;
+      position: absolute;
+    }
+
+  .arrow-finger {
+  position: absolute;
+  top: 1vh;
+  right: 3vh;
+  border: solid #aaa;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+  
+}
+
+ .right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  z-index: 2;
+}  
+
+
+
+.aside .company-info {
+  position: relative;
+  margin: 0;
+  /* padding: 8vh 5vw 5vh 5vw; */
+  padding: 5vh 5vw 2vh 5vw;
+  width: 100%;
+  height: 80vh;
+  background-image: url(../image/flower10.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: 3;
+}
+
+.aside .company-info .title{
+ /* margin: 0 5vw 10vh 5vw; */
+ margin: 0 5vw 5vh 5vw;
+ display: flex;
+ position: relative;
+ 
+ 
+}
+
+
+.aside .company-info .title h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  color: #fff;
+}
+
+.aside .company-info .title p {
+  color: #fff;
+  font-size: 12px;
+}
+
+.company-info .text-right {
+  position: relative;
+}
+
+
+.company-info .btn-info a {
+  text-decoration: none;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+
+.company-info .text-right .button {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  border: 1px solid #c1bfca;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 10px 30px;
+  overflow: hidden;
+  /* top: 13vh; */
+  top: 11vh;
+  left: 0
+}
+
+.company-info .text-right .button-eff {
+  width: 107px;
+  height: 52px;
+  top:-2px;
+  left: -108px;
+  background:#c1bfca;
+  position:absolute;
+  transition:all .5s ease;
+  position: absolute;
+  z-index:1;
+}
+
+.company-info .text-right .button:hover .button-eff {
+  left: 0;
+}
+
+.company-info .text-right .button:hover > a{
+  color: #fff;
+}
+
+.company-info .text-right .arrow {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.icon-ios-arrow-right {
+  position: absolute;
+  right: -10px;
+  top: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); 
+}
+
+.company-info .text-right .button:hover > a > .arrow {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.company-info .text-right .button:hover.icon-ios-arrow-right {
+  position: absolute;
+  right: -10px;
+  top: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); 
+}
+
+.company-info .item {
+  padding: 0;
+  /* margin: 3vh 5vw; */
+  margin: 0vh 5vw;
+  border-bottom: 1px solid #fff;
+}
+
+.company-info .item:last-child {
+  border-bottom: none;;
+}
+
+
+
+.company-info .item h4 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.company-info .item p {
+  color: #fff;
+}
+
+#page-top{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#page-top:hover {
+  color: #181818;
+}
+
+.footer{
+  color: #fff;
+  text-align: center;
+  margin: 10px auto;
+  transition: 2s;
+}
